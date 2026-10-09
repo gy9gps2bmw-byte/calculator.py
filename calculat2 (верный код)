@@ -1,0 +1,38 @@
+import math
+
+def add(x, y):
+    return x + y
+
+def subtract(x, y):
+    return x - y
+
+def divide(x, y):
+    if y == 0:
+        return "Ошибка: деление на ноль"
+    return x / y
+
+def multiply(x, y):
+    return x * y
+
+def square(x):
+    return x ** 2
+
+def power(x, y):
+    return x ** y
+
+def sqrt(x):
+    if x < 0:
+        return "Ошибка: отрицательное число"
+    return math.sqrt(x)
+
+# Проверка работы калькулятора
+if __name__ == "__main__":
+    print("Сложение: 5 + 3 =", add(5, 3))
+    print("Вычитание: 10 - 4 =", subtract(10, 4))
+    print("Умножение: 6 * 7 =", multiply(6, 7))
+    print("Деление: 15 / 3 =", divide(15, 3))
+    print("Деление на ноль:", divide(5, 0))
+    print("Квадрат: 4² =", square(4))
+    print("Степень: 2³ =", power(2, 3))
+    print("Корень: √16 =", sqrt(16))
+    print("Корень из отрицательного:", sqrt(-4))
